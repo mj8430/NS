@@ -1,0 +1,37 @@
+mport des cipher
+
+omaes cipher import Data Encrypter, DataDecrypter
+
+ata "Hello world"
+
+Avd test pwd1")
+
+test saltt"]
+
+lata encrypter Data Encrypter(
+
+lata encrypter. Encrypt(data, pwd, salt)
+
+nc data data_encrypter.GetEncryptedData()
+
+int ("Data: ", data)
+
+rint ("Passwords:", pwd)
+
+rint ("Salts:", salt)
+
+rint ("Encrypted data: ", enc_data)
+
+ata_decrypter = DataDecrypter (
+
+ata_decrypter. Decrypt (enc_data, pwd)
+
+ec_data = data_decrypter.GetDecryptedData()
+
+print ("Data: ", data)
+
+print ("Passwords: ", pwd)
+
+print ("Salts: ", salt)
+
+rint ("\n\nDecrypted data: ", dec_data)
