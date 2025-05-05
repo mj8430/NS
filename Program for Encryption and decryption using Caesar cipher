@@ -1,0 +1,43 @@
+clude <stdio.h>
+
+clude <ctype.h>
+
+unction to encrypt text using Caesar Cipher
+
+encrypt(char text[], int shift)
+
+for (int i = 0; text[i] != '\0'; i++)
+
+char ch = text[i];
+
+// Encrypt uppercase letters
+
+if (isupper(ch))
+
+text[i] = ((ch-'A' + shift) % 26) + 'A';
+
+// Encrypt lowercase letters
+
+else if (islower(ch))
+
+text[i] = ((ch 'a' + shift) % 26) + 'a';
+
+// Keep spaces and other characters unchanged
+
+river function
+
+main()
+
+ar text[] = "Network"; // Example input
+
+shift = 4;
+
+intf("Text: %s\n", text);
+
+intf("Shift: %d\n", shift);
+
+crypt(text, shift); // Encrypt text
+
+intf("Cipher: %s\n", text); // Print encrypted text
+
+Return 0;
