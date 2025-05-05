@@ -1,0 +1,27 @@
+from pyDes import des, CBC, PAD PKCS5
+
+import binascii
+
+Define the key and data to be encrypted
+
+key="01234567" # 64-bit key as a string
+
+data = "Hello123" #Message to be encrypted
+
+Initialize the DES cipher
+
+cipher = des(key, CBC, key, pad=None, padmode=PAD_PKCS5)
+
+#Encrypt the data
+
+encrypted_data = cipher.encrypt(data)
+
+Convert the binary encrypted data to a hexadecimal string
+
+hex_encrypted_data = binascii.hexlify(encrypted_data)
+
+print("Encrypted data:", hex_encrypted_data.decode())
+
+Output
+
+Encrypted data: c8a2e295f9b2f59d
